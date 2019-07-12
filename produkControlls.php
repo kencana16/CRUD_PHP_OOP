@@ -35,7 +35,7 @@ class produk{
 // Akhir Perintah Menampilkan data
 
 
-//membuat fungsi tambah data mahasiswa
+//membuat fungsi tambah data 
 function tambah_produk($sv_id,$sv_nmproduk,$sv_hrgbeli,$sv_hrgjl,$sv_jml){	
 			
 	//buat perintah sql
@@ -52,12 +52,12 @@ function tambah_produk($sv_id,$sv_nmproduk,$sv_hrgbeli,$sv_hrgjl,$sv_jml){
 
 
 
-//membuat fungsi hapus data mahasiswa
+//membuat fungsi hapus data
 function hapus_produk($id){
 	//buat perintah sql
 	$sql="delete from $this->tbl where id_produk='$id'";
 
-	//hapus data mahasiswa tsb
+	//hapus data tsb
 	$stmt=$this->cn02670->prepare($sql);
 	$stmt->execute();
 
